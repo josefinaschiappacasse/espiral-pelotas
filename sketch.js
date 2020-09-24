@@ -23,7 +23,7 @@ function setup() {
 function draw() {
   
   translate(width / 2, height / 2);
-  background("lightblue");
+  background(255);
 
   rad = s1.value();
   turns = s2.value();
