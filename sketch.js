@@ -9,13 +9,13 @@ function setup() {
   sketch = createCanvas(700, 700);
   sketch.parent("p5");
   
-  s1 = createSlider(0, 2, 0.6, 0.0001); // rad
-  s2 = createSlider(0, 20, 5, 1); //turns
+  s1 = createSlider(0, 2, 2, 0.0001); // rad
+  s2 = createSlider(0, 20, 1, 1); //turns
   s3 = createSlider(0, PI, 0.5, 0.00001);
-  s5 = createSlider(10,100);
-  s6 = createSlider(10,100);
+  s5 = createSlider(10,100, 13);
+  s6 = createSlider(10,100,100);
   colorMode(HSB)
-  s4 = createSlider(0, 255);
+  s4 = createSlider(0, 255, 230);
  
 
 }
