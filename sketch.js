@@ -3,11 +3,11 @@
 //para este espiral uso como base el codigo dado en clases, cambiando triangle por ellipse y agregando sliders que modifican tamaño y color, asi se permite un juego en el que se pueden observar variados espirales 
 
 let s1, s2, rad, turns, angInc, col, tam, tam2;
-
+let sketch;
 
 function setup() {
-  createCanvas(700, 700);
-
+  sketch = createCanvas(700, 700);
+  sketch.parent("p5");
   
   s1 = createSlider(0, 2, 0.6, 0.0001); // rad
   s2 = createSlider(0, 20, 5, 1); //turns
