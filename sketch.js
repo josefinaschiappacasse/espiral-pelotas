@@ -8,7 +8,8 @@ let sketch;
 function setup() {
   sketch = createCanvas(700, 700);
   sketch.parent("p5");
-  
+ 
+
   s1 = createSlider(0, 2, 2, 0.0001); // rad
   s2 = createSlider(0, 20, 1, 1); //turns
   s3 = createSlider(0, PI, 0.5, 0.00001);
@@ -17,6 +18,12 @@ function setup() {
   colorMode(HSB)
   s4 = createSlider(0, 255, 230);
  
+  s1.parent("p5");
+  s2.parent("p5"); 
+  s3.parent("p5"); 
+  s4.parent("p5"); 
+  s5.parent("p5"); 
+  s6.parent("p5");
 
 }
 
