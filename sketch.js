@@ -6,7 +6,7 @@ let s1, s2, rad, turns, angInc, col, tam, tam2;
 let sketch;
 
 function setup() {
-  sketch = createCanvas(700, 700);
+  sketch = createCanvas(700,700);
   sketch.parent("p5");
  
 
@@ -87,4 +87,8 @@ function escama(x, y, ang, sc) {
   noStroke();
   ellipse(10, 20, tam2, tam);
   pop();
+}
+
+function keyTyped() {
+  if (key == 'g') save("P_2_1_3_01.jpg");
 }
